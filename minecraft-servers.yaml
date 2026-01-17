@@ -5,11 +5,12 @@ servers:
     start_on_boot: true
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
     port: 56184                  # Required for service; validated against game-ports.json range
-  id_b:
-    friendly_name: Creative test
-    folder: FolderName2
-    start_on_boot: false
-    start_command: java -Xmx4G -Xms1G -jar paper.jar --nogui
-    port: 56184
+  famine:
+    friendly_name: Famine MC
+    folder: FamineMC
+    start_on_boot: true
+    start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
+    port: 56185
 provisioned:
   - bonkers
+  - famine
