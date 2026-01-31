@@ -11,6 +11,11 @@ servers:
     start_on_boot: true
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
     port: 56185
+  spruce:
+    friendly_name: Spruce Goose
+    folder: SpruceGoose
+    start_on_boot: true
+    start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
+    port: 56186
 provisioned:
-  - bonkers
-  - famine
+  - spruce
