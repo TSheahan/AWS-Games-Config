@@ -17,7 +17,14 @@ servers:
     start_on_boot: true
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
     port: 56186
+  tekr:
+    friendly_name: TEKR
+    folder: TEKR
+    start_on_boot: false
+    start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
+    port: 56187
 provisioned:
   - spruce
   - bonkers
   - famine
+  - tekr
