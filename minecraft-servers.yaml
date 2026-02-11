@@ -14,7 +14,7 @@ servers:
   spruce:
     friendly_name: Spruce Goose
     folder: SpruceGoose
-    start_on_boot: true
+    start_on_boot: false
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
     port: 56186
   tekr:
@@ -23,8 +23,15 @@ servers:
     start_on_boot: false
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
     port: 56187
+  imla:
+    friendly_name: ImlaPlas
+    folder: ImlaPlas
+    start_on_boot: true
+    start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
+    port: 56188  
 provisioned:
   - spruce
   - bonkers
   - famine
   - tekr
+  - imla
