@@ -1,4 +1,10 @@
 servers:
+  vanilla:
+    friendly_name: VanillaIcecream
+    folder: VanillaIcecream
+    start_on_boot: true
+    start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
+    port: 56183                  # Required for service; validated against game-ports.json range
   bonkers:
     friendly_name: "Bonkers"
     folder: Bonkers
@@ -26,12 +32,11 @@ servers:
   imla:
     friendly_name: ImlaPlas
     folder: ImlaPlas
-    start_on_boot: true
+    start_on_boot: false
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
     port: 56188  
 provisioned:
-  - spruce
-  - bonkers
   - famine
+  - vanilla
   - tekr
   - imla
