@@ -38,12 +38,15 @@ servers:
   balkan:
     friendly_name: Balkanised
     folder: Balkanised
-    start_on_boot: true
+    start_on_boot: false
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
     port: 56184  
+  chaos:
+    friendly_name: CreateChaos
+    folder: CreateChaos
+    start_on_boot: true
+    start_command: java @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.20.1-47.3.7/unix_args.txt nogui
+    port: 56185  
 provisioned:
-  - famine
-  - vanilla
-  - tekr
-  - imla
   - balkan
+  - chaos
