@@ -34,19 +34,26 @@ servers:
     folder: ImlaPlas
     start_on_boot: false
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
-    port: 56188  
+    port: 56188
   balkan:
     friendly_name: Balkanised
     folder: Balkanised
     start_on_boot: false
     start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
-    port: 56184  
+    port: 56184
   chaos:
     friendly_name: CreateChaos
     folder: CreateChaos
-    start_on_boot: true
+    start_on_boot: False
     start_command: java @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.20.1-47.3.7/unix_args.txt nogui
-    port: 56185  
+    port: 56185
+  australia:
+    friendly_name: Australia
+    folder: Australia
+    start_on_boot: true
+    start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-mc.26.1.1-loader.0.18.6-launcher.1.1.1.jar nogui
+    port: 56186
 provisioned:
   - balkan
   - chaos
+  - australia
