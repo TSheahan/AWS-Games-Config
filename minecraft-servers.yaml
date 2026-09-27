@@ -57,7 +57,7 @@ servers:
     friendly_name: Dark Boris
     folder: DarkBoris
     start_on_boot: true
-    start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-mc.26.3-loader.0.19.5-launcher.1.1.2.jar nogui
+    start_command: java -Xmx3G -Xms512M -Djava.net.preferIPv4Stack=true -jar fabric-server-launch.jar nogui
     port: 56183
 provisioned:
   - darkboris
